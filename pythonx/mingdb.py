@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import os
@@ -231,7 +231,7 @@ def PatchGdbInit():
             f.write(line)
         f.write('\n')
         f.write(settings_spell)
-        
+
 
 
 GDB_SETTINGS_CONTENT = """

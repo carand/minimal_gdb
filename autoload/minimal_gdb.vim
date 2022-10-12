@@ -16,14 +16,6 @@ function! s:EnsurePythonInitialization()
         if exists("g:mingdb_gdbinit_path")
             py3 mingdb.GDB_INIT_PATH = vim.eval('expand(g:mingdb_gdbinit_path)')
         endif
-    else
-        py import sys
-        py import vim
-        py import mingdb
-        py mingdb.InitCacheFlag()
-        if exists("g:mingdb_gdbinit_path")
-            py mingdb.GDB_INIT_PATH = vim.eval('expand(g:mingdb_gdbinit_path)')
-        endif
     endif
     "if pyeval('mingdb.DatabaseIsEmpty()')
     "    let s:debug_session_is_active_cache_flag = 0
