@@ -14,5 +14,5 @@ com! MinGDBShowBreakpoints cal minimal_gdb#show_breakpoints()
 com! MinGDBRefreshFile MinGDBShowBreakpoints
 com! MinGDBListAll cal minimal_gdb#list_all()
 
-nnoremap <Leader>b :MinGDBToggleBP<CR>
+" nnoremap <Leader>b :MinGDBToggleBP<CR>
 autocmd BufRead * cal MinGDBCheckFileType()
